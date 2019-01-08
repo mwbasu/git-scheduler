@@ -18,8 +18,8 @@ def git_push():
         print('Code push from script succeeded')
 
 
-schedule.every(2).minutes.do(git_push)
-# schedule.every().hour.do(git_push)
+schedule.every(2).hour.do(git_push)     # git push after every two hour
+# schedule.every(2).minutes.do(git_push)
 # schedule.every().day.at("10:30").do(git_push)
 # schedule.every(5).to(10).minutes.do(git_push)
 # schedule.every().monday.do(git_push)
